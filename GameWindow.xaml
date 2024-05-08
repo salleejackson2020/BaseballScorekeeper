@@ -1,0 +1,77 @@
+﻿<Window x:Class="BaseballScorekeeper.GameWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BaseballScorekeeper"
+      mc:Ignorable="d" 
+      d:DesignHeight="478.07" d:DesignWidth="800"
+      Title="Game - Baseball Scorekeeper" Closing="Window_Closing">
+
+    <Grid Height="450" Margin="10,6,0,6">
+        <Button Click="RecordBall_Click" x:Name="RecordBall" Content="Ball" Margin="33,378,613,10" Width="100"/>
+        <Button Click="RecordStrike_Click" x:Name="RecordStrike" Content="Strike" Margin="182,378,464,10" Width="100"/>
+        <Button x:Name="RecordOut" Content="Out" Click="RecordOut_Click" Margin="331,378,315,10" Width="100"/>
+        <Button  x:Name="RecordInPlay" Content="InPlay" Click="RecordInPlay_Click" Margin="480,378,166,10" Width="100"/>
+        <Button x:Name="RecordExit" Click="RecordExit_Click" Content="Exit" Margin="629,378,17,10" Width="100"/>
+        <Label x:Name="AtBat" Content="At Bat: " Margin="10,285,238,106"/>
+        <Label x:Name="Pitcher" Content="Pitching: " Margin="105,196,428,196"/>
+        <Label x:Name="On_Base" Content="On Base:" Margin="459,178,65,138"/>
+        <Label Content="1" Margin="82,0,652,422"/>
+        <Label Content="2" Margin="110,0,652,422"/>
+        <Label Content="3" Margin="138,0,624,422"/>
+        <Label Content="4" Margin="166,0,596,422"/>
+        <Label Content="5" Margin="199,0,563,422"/>
+        <Label Content="6" Margin="232,0,530,422"/>
+        <Label Content="7" Margin="254,0,508,422"/>
+        <Label Content="8" Margin="282,0,480,422"/>
+        <Label Content="9" Margin="310,0,452,422"/>
+        <Label Content="10" Margin="338,0,424,422"/>
+        <Label Content="11" Margin="375,0,387,422"/>
+        <Label Content="12" Margin="408,0,354,422"/>
+        <Label Content="Visitor" Margin="10,28,736,397"/>
+        <Label Content="Home" Margin="10,58,736,367"/>
+        <Label x:Name="Visitor1" Content="-" Margin="82,28,680,394"/>
+        <Label x:Name="Home1" Content="-" Margin="82,53,680,369"/>
+        <Label x:Name="Visitor2" Content="-" Margin="105,28,657,394"/>
+        <Label x:Name="Home2" Content="-" Margin="105,53,657,369"/>
+        <Label x:Name="Visitor3" Content="-" Margin="133,28,629,394"/>
+        <Label x:Name="Home3" Content="-" Margin="133,53,629,369"/>
+        <Label x:Name="Visitor4" Content="-" Margin="161,28,601,394"/>
+        <Label x:Name="Home4" Content="-" Margin="161,53,601,369"/>
+        <Label x:Name="Visitor5" Content="-" Margin="189,28,573,394"/>
+        <Label x:Name="Home5" Content="-" Margin="189,53,573,369"/>
+        <Label x:Name="Visitor6" Content="-" Margin="226,28,536,394"/>
+        <Label x:Name="Home6" Content="-" Margin="226,53,536,369"/>
+        <Label x:Name="Visitor7" Content="-" Margin="249,28,513,394"/>
+        <Label x:Name="Home7" Content="-" Margin="249,53,513,369"/>
+        <Label x:Name="Visitor8" Content="-" Margin="277,28,485,394"/>
+        <Label x:Name="Home8" Content="-" Margin="277,53,485,369"/>
+        <Label x:Name="Visitor9" Content="-" Margin="305,28,457,394"/>
+        <Label x:Name="Home9" Content="-" Margin="305,53,457,369"/>
+        <Label x:Name="Visitor10" Content="-" Margin="334,28,428,394"/>
+        <Label x:Name="Home10" Content="-" Margin="334,53,428,369"/>
+        <Label x:Name="Visitor11" Content="-" Margin="371,28,391,394"/>
+        <Label x:Name="Home11"  Content="-" Margin="371,53,391,369"/>
+        <Label x:Name="Visitor12" Content="-" Margin="403,28,359,394"/>
+        <Label x:Name="Home12" Content="-" Margin="404,53,358,369"/>
+        <Label Content="R" Margin="431,0,331,422"/>
+        <Label Content="H" Margin="459,0,303,422"/>
+        <Label Content="E" Margin="487,0,275,422"/>
+        <Label x:Name="VisitorR" Content="0" Margin="432,28,330,394"/>
+        <Label x:Name="HomeR"  Content="0" Margin="429,53,333,369"/>
+        <Label x:Name="VisitorH" Content="0" Margin="457,28,305,394"/>
+        <Label x:Name="HomeH"  Content="0" Margin="457,53,305,369"/>
+        <Label x:Name="VisitorE" Content="0" Margin="485,28,277,394"/>
+        <Label x:Name="HomeE"  Content="0" Margin="485,53,277,369"/>
+        <Label x:Name="Inning"  Content="Top 1st" Margin="674,28,62,392"/>
+        <Label x:Name="LastPlay" Content="Last Play: Game Started." Margin="18,114,514,278"/>
+        <Label x:Name="Balls" Content="Balls: 0" Margin="47,344,652,77"/>
+        <Label x:Name="Strikes" Content="Strikes: 0" Margin="203,344,496,77"/>
+        <Label x:Name="Outs" Content="Outs: 0" Margin="340,344,359,77"/>
+
+
+
+
+    </Grid>
+</Window>
